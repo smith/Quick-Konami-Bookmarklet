@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Quick Konami Bookmarklet</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_css/quick-konami.css" />
+
+</head>
+
+<body>
+
+    <div id="container">
+    
+        <h1><a href="/">Quick Konami</a></h1>
+        
+        <h2>What Quick Konami is</h2>
+        <p>These days, it seems that a common trend on the interwebz is to hide <a href="http://en.wikipedia.org/wiki/Easter_egg_(media)">easter eggs</a> within a website using the ever famous <a href="http://en.wikipedia.org/wiki/Konami_code"><em>Konami Code</em></a>. <strong>Quick Konami</strong> is a bookmarklet for Firefox that makes life a little easier by automatically keying the Konami Code with the press of a button.</p>
+
+    
+        <h2>How it works</h2>
+        <p>It couldn’t be easier! Simply drag the Quick Konami button below to your bookmark bar. Next, visit any website using the Konami code and wait for the page to fully load. Finally, click the Konami Code bookmarklet.</p>
+        
+        <div id="bookmarklet">
+            <a href='javascript:(function () { var k = { u : 38, d : 40, l : 37, r : 39, a : 65, b : 66 }, keys = ["u", "u", "d", "d", "l", "r", "l", "r", "b", "a"], evtArgs = ["keydown", 1, 1, window, 0, 0, 0, 0, null, 0], evt = document.createEvent("KeyboardEvent"); for (var i = 0; i < keys.length; i += 1) { evtArgs.splice(evtArgs.length - 2, 2, k[keys[i]], 0); evt.initKeyEvent.apply(evt, evtArgs); document.body.dispatchEvent(evt); } })();' title="Quick Konami Bookmarklet">Quick Konami</a>
+        </div>
+        
+        <h2>I’ve installed it and it doesn’t work</h2>
+        <p>There are several reasons why it may not work: The most obvious reason is that the website you’re trying it on may not be using the Konami code. For a list of known sites using the Konami code, we recommend visiting <a href="http://konamicodesites.com/">konamicodesites.com<a/>. Some sites require you to press ENTER after entering the code, in which case you can use the bookmarklet and press ENTER afterwards. Another reason that it may not be using is that you’re not using the Firefox web browser. At this time, Quick Konami is only compatible with Firefox.</p>
+
+        
+        <p class="footer">&copy; 2009 <a href="http://iamdanielmarino.com">Daniel Marino</a> &amp; <a href="http://nlsmith.com">Nathan L. Smith</a>. All rights reserved.</p>
+    
+    </div>
+
+</body>
+
+</html>

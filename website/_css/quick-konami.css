@@ -1,0 +1,70 @@
+/*
+
+Title:      Quick Konami Styles
+Author:     Daniel Marino
+Revised:		June 2009
+
+*/
+
+body {
+	background: #fff url(/_img/projects/quick-konami/background.png) left top repeat-y;
+	color: #0e0e0e;
+	font-family: Helvetica, Arial, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+h1 {
+	background: url(/_img/projects/quick-konami/logo.png);
+	height: 42px;
+	margin: 30px 0;
+	width: 313px;
+}
+
+h1 a {
+	display: block;
+	height: 42px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 313px;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+p, #bookmarklet {
+	margin-bottom: 30px;
+}
+
+#bookmarklet {
+	height: 84px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 307px;
+}
+
+#bookmarklet a {
+	background: url(/_img/projects/quick-konami/bookmarklet.png);
+	display: block;
+	height: 84px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 307px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 620px;
+}
+
+.footer {
+	color: #838383;
+	border-top: 1px solid #838383;
+	font-size: 11px;
+	padding-top: 5px;
+}
+
+.footer a {
+	color: #838383;
+}
